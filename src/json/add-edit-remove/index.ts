@@ -4,55 +4,31 @@ Copyright (c) 2024 Pho Thin Maung
 */
 
 import { readJson, writeJson } from "../read-and-write/index.ts";
-import { exist } from "../../utl/index.ts";
+import { exist } from "../../util/index.ts";
 
 /**
  * Adds an object to a JSON file.
  * ------------------------------
  * 
+ * *****
  * 
+ * @param filePath - The path to the JSON file.
+ * @param content - The object to be added to the JSON file.
+ * 
+ * ******
+ * 
+  - The addObject function adds an object to a JSON file by first checking if the file exists. 
+  - If the file does not exist, an error message is displayed. If the file exists, the function reads the existing data from the file, 
+  - appends the new object to the data, and then writes the updated data back to the file.
 
-  Summary
-  -------
-  The addObject function adds an object to a JSON file by first checking if the file exists. 
-  If the file does not exist, an error message is displayed. If the file exists, the function reads the existing data from the file, 
-  appends the new object to the data, and then writes the updated data back to the file.
+***********
 
-  Inputs
-  ------
-  filePath (string): The path to the JSON file.
-  id (any): The identifier for the new object.
-  content (object): The object to be added to the JSON file.
-
-  Flow
-  ----
-  Check if the JSON file exists using the exist function.
-  If the file does not exist, display an error message and exit the process.
-  Create a new object newData with the provided id and content.
-  Read the existing data from the JSON file using the readJson function.
-  Append the newData object to the existing data.
-  Write the updated data back to the JSON file using the writeJson function.
-
-  Outputs
-  ------
-  None
-
-  Example
-  -------
-
+@example
   const filePath = "data.json";
   const id = 1;
   const content = { name: "John", age: 30 };
   addObject(filePath, id, content);
-
-  In this example, the addObject function is called with a filePath of "data.json", an id of 1, and a content object containing the name and age. 
-  The function will check if the "data.json" file exists. If it does, it will read the existing data from the file, 
-  append the new object with the provided id and content, and write the updated data back to the file.
-
- * @param filePath - The path to the JSON file.
- * @param content - The object to be added to the JSON file.
- * @includeExample ./src/JSON/add-edit-remove/example.ts: 1-5
- * 
+* 
  */
 export const addObject = async (filePath: string, id: any, content: object) => {
   try {
@@ -78,37 +54,27 @@ export const addObject = async (filePath: string, id: any, content: object) => {
  * Removes an object from a JSON file based on its ID.
  * ---------------------------------------------------
  * 
- *
-
-  Inputs
-  ------
-  filePath (string): The path to the JSON file.
-  id (any): The ID of the object to be removed.
-
-  Flow
-  ----
-  Check if the JSON file exists using the exist function.
-  If the file does not exist, log an error message and exit the process.
-  Load the JSON file using the readJson function.
-  Filter the loaded JSON content to create a new array without the item with the matching ID.
-  Write the updated content back to the JSON file using the writeJson function.
-
-  Outputs
-  -------
-  The function does not return any value. It either removes the object from the JSON file or logs an error message if the file does not exist.
-
-  Example
-  -------
-  await removeObject("data.json", 123);
-
-  This will remove the object with ID 123 from the "data.json" file.
-
- *
+ * *******
+ * 
  * @param {string} filePath - The path to the JSON file.
  * @param {any} id - The ID of the object to be removed.
  * @returns {Promise<void>} - A promise that resolves when the object is successfully removed.
  * @throws {Error} - If there is an error while removing the object.
- * @includeExample ./src/JSON/add-edit-remove/example.ts: 8-9
+ * 
+ * ******
+ * 
+  - Check if the JSON file exists using the exist function.
+  - If the file does not exist, log an error message and exit the process.
+  - Load the JSON file using the readJson function.
+  - Filter the loaded JSON content to create a new array without the item with the matching ID.
+  - Write the updated content back to the JSON file using the writeJson function.
+
+  @example
+  await removeObject("data.json", 123);
+
+ *
+
+ 
  */
 export const removeObject = async (
   filePath: string,
@@ -137,42 +103,22 @@ export const removeObject = async (
  * Edits an object in a JSON file.
  * -------------------------------
  * 
-
-  Summary
-  -------
-  This code defines a function named editObject that is used to edit an object in a JSON file. 
-  It checks if the file exists, reads the JSON content, finds the object with the specified ID, 
-  merges the existing content with the new content, replaces the existing object with the new object, 
-  and writes the updated content back to the JSON file.
-
-  Inputs
-  ------
-  filePath (string): The path to the JSON file.
-  id (any): The identifier of the object to be edited.
-  content (object): The new content to replace the existing content of the object.
-
-  Flow
-  -----
-  Check if the JSON file exists at the specified filePath.
-  Read the JSON file and parse its content into an array of objects.
-  Find the object in the array with the specified id.
-  Create a new object by merging the existing content of the object with the new content.
-  Replace the existing object in the array with the new object.
-  Write the updated array of objects back to the JS
-
-  Outputs
-  ------
-  None. The function does not return any value.
-
-  Example
-  -------
-  editObject("data.json", 1, { name: "John Doe" });
-
+ * ****
+ * 
  * @param filePath - The path to the JSON file.
  * @param id - The identifier of the object to be edited.
  * @param content - The new content to replace the existing content of the object.
- * @includeExample ./src/JSON/add-edit-remove/example.ts: 11-12
- */
+ * 
+ * ****
+ * 
+  - This code defines a function named editObject that is used to edit an object in a JSON file. 
+  - It checks if the file exists, reads the JSON content, finds the object with the specified ID, 
+    merges the existing content with the new content, replaces the existing object with the new object, 
+    and writes the updated content back to the JSON file.
+
+  @example
+  editObject("data.json", 1, { name: "John Doe" });
+*/
 export const editObject = async (
   filePath: string,
   id: any,

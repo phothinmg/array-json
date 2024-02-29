@@ -1,14 +1,18 @@
 {
   "$schema": "https://typedoc.org/schema.json",
-  "name": "JSON-ARRAY",
+  "name": "ARRAY-JSON",
   "darkHighlightTheme": "dark-plus",
   "favicon": "public/logo.svg",
-  "entryPoints": ["./src/JSON/index.ts", "./src/UTIL/index.ts"],
+  "entryPoints": [
+    "./src/json/read-and-write/index.ts",
+    "./src/json/add-edit-remove/index.ts",
+    "./src/json/find-getdata/index.ts",
+    "./src/util/index.ts"
+  ],
   "out": "docs",
   "plugin": [
-    "typedoc-plugin-include-example",
     "typedoc-google-tag-manager-plugin",
     "typedoc-plugin-extras",
-    "typedoc-plugin-clarity",
+    "typedoc-plugin-clarity"
   ]
 }

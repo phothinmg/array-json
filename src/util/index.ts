@@ -26,6 +26,8 @@ import { createHmac, createHash } from "crypto";
  *
  * @param target - The path to the file or directory to check.
  * @returns A promise that resolves to a boolean indicating if the target exists and is readable.
+ * @example
+ * const exists = await exist(filePath);
  */
 export const exist = async (target: any): Promise<boolean> => {
   try {

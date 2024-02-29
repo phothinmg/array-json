@@ -17,54 +17,18 @@
 ## Install
 
 ```bash
-npm i array-as-json
+npm i array-json
 ```
 
 ```bash
-yarn add array-as-json
+yarn add array-json
 ```
 
 ```bash
-pnpm i array-as-json
+pnpm i array-json
 ```
 
----
-## Usage
 
-##### ESM
-
-Import functions for JSON .
-
-```js
-
-import { --- } from "array-as-json";
-```
-
-Import some utility functions from 'util'.
-
-
-```js
-
-import { --- } from "array-as-json/util";
-```
-
-##### CJS
-
-Functions for JSON .
-
-```js
-
-const { --- } = require("array-as-json");
-```
-
-Some utility functions from 'util'.
-
-```js
-
-const { --- } = require("array-as-json/util");
-```
-
----
 
 ## Documentation 
 
