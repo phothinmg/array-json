@@ -4,7 +4,7 @@ Copyright (c) 2024 Pho Thin Maung
 */
 
 import { readJson, writeJson } from "../read-and-write/index.ts";
-import { exist } from "../../util/index.ts";
+import { exist } from "../../helpers/index.ts";
 
 /**
  * Adds an object to a JSON file.
