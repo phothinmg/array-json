@@ -1,0 +1,14 @@
+{
+  "$schema": "https://typedoc.org/schema.json",
+  "name": "JSON-ARRAY",
+  "darkHighlightTheme": "dark-plus",
+  "favicon": "public/logo.svg",
+  "entryPoints": ["./src/JSON/index.ts", "./src/UTIL/index.ts"],
+  "out": "docs",
+  "plugin": [
+    "typedoc-plugin-include-example",
+    "typedoc-google-tag-manager-plugin",
+    "typedoc-plugin-extras",
+    "typedoc-plugin-clarity",
+  ]
+}
