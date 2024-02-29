@@ -4,7 +4,7 @@ Copyright (c) 2024 Pho Thin Maung
 */
 
 import { readJson, writeJson } from "../read-and-write/index.ts";
-import { exist } from "../../UTIL/index.ts";
+import { exist } from "../../utl/index.ts";
 
 /**
  * Finds an object with a matching ID in a JSON file.
