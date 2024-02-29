@@ -1,0 +1,18 @@
+spell-checker
+==============
+Disable Checking
+/* cSpell:disable */
+/* spell-checker: disable */
+/* spellchecker: disable */
+/* cspell: disable-line */
+/* cspell: disable-next-line */
+Enable Checking
+/* cSpell:enable */
+/* spell-checker: enable */
+/* spellchecker: enable */
+
+npx changeset init
+npx changeset
+npx changeset version
+npx changeset publish
+
