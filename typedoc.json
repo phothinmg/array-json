@@ -2,11 +2,13 @@
   "$schema": "https://typedoc.org/schema.json",
   "name": "ARRAY-JSON",
   "darkHighlightTheme": "dark-plus",
-  "favicon": "public/logo.svg",
+  "favicon": "public/logo.png",
   "entryPoints": [
-    "./src/json/read-and-write/index.ts",
-    "./src/json/add-edit-remove/index.ts",
-    "./src/json/find-getdata/index.ts",
+    "./src/json/index.ts",
+    "./src/helpers/array-object/index.ts",
+    "./src/helpers/file-system/index.ts",
+    "./src/helpers/zlib/index.ts",
+    "./src/helpers/crypto/index.ts",
     "./src/util/index.ts"
   ],
   "out": "docs",
