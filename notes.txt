@@ -12,7 +12,7 @@ Enable Checking
 /* spellchecker: enable */
 
 npx changeset init
-npx changeset
-npx changeset version
+pnpm changeset
+pnpm changeset version
 pnpm changeset publish
 

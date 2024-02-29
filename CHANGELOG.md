@@ -1,5 +1,12 @@
 # array-as-json
 
+## 0.2.1
+
+### Patch Changes
+
+- Create docs
+- Add home page for documentation to package.json
+
 ## 0.2.0
 
 ### Minor Changes
