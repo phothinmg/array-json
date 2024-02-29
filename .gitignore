@@ -86,7 +86,8 @@ jspm_packages/
 a.json
 b.json
 c.json
-a.js
+aa.js
 b.js
 .npmignore
 dist
+notes.txt

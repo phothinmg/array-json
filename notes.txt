@@ -14,5 +14,5 @@ Enable Checking
 npx changeset init
 npx changeset
 npx changeset version
-npx changeset publish
+pnpm changeset publish
 
