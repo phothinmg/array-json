@@ -5,6 +5,7 @@
 
 ---
 
+
 ## About
 
 **A beginner's project and still in progress.**
@@ -20,13 +21,21 @@
 npm i array-json
 ```
 
+---
+
+
 ```bash
 yarn add array-json
 ```
 
+
+---
+
 ```bash
 pnpm i array-json
 ```
+
+---
 
 
 

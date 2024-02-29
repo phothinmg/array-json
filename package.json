@@ -7,7 +7,32 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js",
-      "require": "./dist/cjs/index.cjs"
+      "require": "./dist/index.cjs"
+    },
+    "./file-system": {
+      "types": "./dist/file-system/index.d.ts",
+      "import": "./dist/file-system/index.js",
+      "require": "./dist/file-system/index.cjs"
+    },
+    "./array-object": {
+      "types": "./dist/array-object/index.d.ts",
+      "import": "./dist/array-object/index.js",
+      "require": "./dist/array-object/index.cjs"
+    },
+    "./crypto": {
+      "types": "./dist/crypto/index.d.ts",
+      "import": "./dist/crypto/index.js",
+      "require": "./dist/crypto/index.cjs"
+    },
+    "./zlib": {
+      "types": "./dist/zlib/index.d.ts",
+      "import": "./dist/zlib/index.js",
+      "require": "./dist/zlib/index.cjs"
+    },
+    "./util": {
+      "types": "./dist/util/index.d.ts",
+      "import": "./dist/util/index.js",
+      "require": "./dist/util/index.cjs"
     }
   },
   "scripts": {
