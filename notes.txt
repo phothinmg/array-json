@@ -16,3 +16,6 @@ pnpm changeset
 pnpm changeset version
 pnpm changeset publish
 
+npx jest  --coverage ./test/writeJson.test.ts
+npx jest  --coverage ./test/readJson.test.ts
+

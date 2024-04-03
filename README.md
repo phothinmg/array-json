@@ -35,6 +35,8 @@ pnpm i array-json
 
 ---
 
+<a href="./coverage/index.html">Coverage</a>
+
 **The documentation site has available functions.**
 
 [Visit documentation site.](https://phothinmg.github.io/array-json/)
