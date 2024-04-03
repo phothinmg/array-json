@@ -1,5 +1,11 @@
 # array-as-json
 
+## 1.0.0
+
+### Major Changes
+
+- 725f993: First Release
+
 ## 0.2.1
 
 ### Patch Changes
