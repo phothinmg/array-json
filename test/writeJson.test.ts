@@ -1,5 +1,5 @@
 import { readFile } from "fs/promises";
-import { writeJson } from "../src/read-and-write/index";
+import { writeJson } from "../src";
 describe("writeJson", () => {
   // Successfully writes valid JSON content to a new file
   it("should successfully write valid JSON content to a new file", async () => {

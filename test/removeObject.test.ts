@@ -1,5 +1,5 @@
-import { removeObject } from "../src/add-edit-remove/index";
-import { readJson } from "../src/read-and-write/index";
+import { removeObject } from "../src";
+import { readJson } from "../src";
 describe("removeObject", () => {
   // Removes an object from a JSON file when the ID exists.
 

@@ -3,41 +3,11 @@
   "version": "0.2.1",
   "description": "Utility Functions for handle Array as JSON files",
   "type": "module",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    },
-    "./file-system": {
-      "types": "./dist/file-system/index.d.ts",
-      "import": "./dist/file-system/index.js",
-      "require": "./dist/file-system/index.cjs"
-    },
-    "./array-object": {
-      "types": "./dist/array-object/index.d.ts",
-      "import": "./dist/array-object/index.js",
-      "require": "./dist/array-object/index.cjs"
-    },
-    "./crypto": {
-      "types": "./dist/crypto/index.d.ts",
-      "import": "./dist/crypto/index.js",
-      "require": "./dist/crypto/index.cjs"
-    },
-    "./zlib": {
-      "types": "./dist/zlib/index.d.ts",
-      "import": "./dist/zlib/index.js",
-      "require": "./dist/zlib/index.cjs"
-    },
-    "./util": {
-      "types": "./dist/util/index.d.ts",
-      "import": "./dist/util/index.js",
-      "require": "./dist/util/index.cjs"
-    }
-  },
+  "main": "dist/index.js",
   "scripts": {
     "test": "jest",
-    "build": "tsup"
+    "build": "tsc",
+    "doc": "typedoc"
   },
   "keywords": [
     "JSON",
@@ -55,7 +25,6 @@
     "jest": "^29.7.0",
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
-    "tsup": "^8.0.2",
     "typedoc": "^0.25.8",
     "typedoc-google-tag-manager-plugin": "^1.0.5",
     "typedoc-plugin-clarity": "^1.6.0",

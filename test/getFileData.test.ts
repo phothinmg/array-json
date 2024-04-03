@@ -1,4 +1,4 @@
-import { getFileData } from "../src/find-getdata/index";
+import { getFileData } from "../src";
 describe("getFileData", () => {
   // Returns an array of objects when given a valid file path.
   it("should return an array of objects when given a valid file path", async () => {

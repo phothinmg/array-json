@@ -1,5 +1,5 @@
-import { editObject } from "../src/add-edit-remove/index";
-import { readJson } from "../src/read-and-write/index";
+import { editObject } from "../src";
+import { readJson } from "../src";
 describe("editObject", () => {
   // Edits an object in a JSON file when the specified id exists in the file.
   it("should edit an object when the specified id exists", async () => {

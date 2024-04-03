@@ -1,5 +1,5 @@
-import { addObject } from "../src/add-edit-remove";
-import { readJson } from "../src/read-and-write";
+import { addObject } from "../src";
+import { readJson } from "../src";
 describe("addObject", () => {
   // Successfully adds an object to an existing JSON file.
   it("should successfully add an object to an existing JSON file", async () => {

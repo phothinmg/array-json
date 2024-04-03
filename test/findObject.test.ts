@@ -1,4 +1,4 @@
-import { findObject } from "../src/find-getdata/index";
+import { findObject } from "../src";
 describe("findObject", () => {
   // Returns the object with matching ID when it exists in the JSON file.
   it("should return the object with matching ID when it exists in the JSON file", async () => {

@@ -1,4 +1,4 @@
-import { readJson } from "../src/read-and-write/index";
+import { readJson } from "../src";
 
 describe("readJson", () => {
   // Should read and parse a valid JSON file without errors.
