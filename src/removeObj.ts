@@ -6,14 +6,12 @@ import { exist } from "./exist";
    * Removes an object from a JSON file based on its ID.
    * ---------------------------------------------------
    * 
-   * *******
    * 
    * @param {string} filePath - The path to the JSON file.
    * @param {any} id - The ID of the object to be removed.
    * @returns {Promise<void>} - A promise that resolves when the object is successfully removed.
    * @throws {Error} - If there is an error while removing the object.
    * 
-   * ******
    * 
     - Check if the JSON file exists using the exist function.
     - If the file does not exist, log an error message and exit the process.
@@ -23,11 +21,7 @@ import { exist } from "./exist";
   
     @example
     await removeObject("data.json", 123);
-  
-   *
-  
-   
-   */
+*/
 export const removeObject = async (
   filePath: string,
   id: any

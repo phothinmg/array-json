@@ -3,8 +3,6 @@ import { open } from "fs/promises";
 /**
  * Asynchronous function that reads a JSON file from the specified file path.
  * --------------------------------------------------------------------------
- * 
- *************
  
   
  * 
@@ -12,7 +10,6 @@ import { open } from "fs/promises";
  * @returns A Promise that resolves to the parsed JSON content of the file.
  * @throws If the file does not exist or if there is an error reading the file.
  * 
- *************
  * 
  *  - This code defines an asynchronous function called readJson that reads the content of a JSON file from the specified file path. 
  *  - It uses the open function from the fs/promises module to open the file, creates a read stream from the file handler, and reads the file in chunks. 

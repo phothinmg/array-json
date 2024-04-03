@@ -6,7 +6,7 @@
     "declaration": true,
     "declarationMap": true,
     "sourceMap": true,
-    "outDir": "./out",
+    "outDir": "./dist",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
@@ -14,5 +14,5 @@
     "skipLibCheck": true
   },
   "exclude": ["node_modules/**/*", "dist/**/*", "out/**/*"],
-  "include": ["src/**/*"]
+  "include": ["src/index.ts"]
 }

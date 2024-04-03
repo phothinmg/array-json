@@ -4,6 +4,7 @@
   "description": "Utility Functions for handle Array as JSON files",
   "type": "module",
   "main": "dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "test": "jest  --coverage",
     "build": "tsc",
