@@ -1,6 +1,6 @@
 {
   "name": "array-json",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Utility Functions for handle Array as JSON files",
   "type": "module",
   "main": "dist/index.js",
