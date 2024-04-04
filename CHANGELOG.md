@@ -1,7 +1,6 @@
 # array-as-json
 
 
-
 ## 0.2.1
 
 ### Patch Changes
