@@ -13,6 +13,6 @@
     "strict": true,
     "skipLibCheck": true
   },
-  "exclude": ["node_modules/**/*", "dist/**/*", "out/**/*"],
+  "exclude": ["node_modules/**/*", "dist/**/*", "out/**/*","lib/**/*"],
   "include": ["src/index.ts"]
 }
