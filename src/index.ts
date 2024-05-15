@@ -12,7 +12,7 @@ import {
   writeFile,
   unlink,
   rename,
-} from "fs/promises";
+} from "node:fs/promises";
 import { dirname } from "node:path";
 import zlib from "node:zlib";
 import { pipeline } from "node:stream";
